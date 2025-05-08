@@ -79,6 +79,8 @@ footer {
   border-radius: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
   position: relative;
   bottom: 0;
   width: auto;
@@ -86,4 +88,14 @@ footer {
 
 .footer-box {
   padding: 20px;
+  margin-left: 20px;
+  
+}
+
+.footer-box ul {
+  margin-left: 30px;
+}
+
+.footer-box h2 {
+  font-size: 20px;
 }
