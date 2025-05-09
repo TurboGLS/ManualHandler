@@ -29,11 +29,21 @@ body {
 }
 
 #ManualReference h2 {
-  font-size: 15;
+  font-size: 15px;
   text-align: left;
   padding-top: 5px;
   font-weight: normal;
   padding-left: 10px;
+}
+
+.link-nice {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+.link-nice:hover {
+  color: #005fa3;
+  border-bottom: 2px solid #005fa3;
 }
 
 table {
