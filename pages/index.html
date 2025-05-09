@@ -4,412 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <div id="header">
-        <img src="assets/HubertusLogo.png" alt="Hubertus Logo">
+        <img src="assets/SMALogopng.png" alt="SMA Logo">
     </div>
     <div id="ManualReference">
-        <h1>Inidicazione Manuale</h1>
-        <h2><a href="../PARAMETER-HTML_STPxx-3SE-40_30109R_V11/parameterlist_it.html" class="link-nice">SUNNY TRIPOWER 8.0 / 10.0</a></h2>
+        <h1>Lista Manuali Fotovoltaici SMA</h1>
     </div>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div>
+    <div class="listManual">
+        <ul>
+            <li><p><a href="../PARAMETER-HTML_STPxx-3SE-40_30109R_V11/parameterlist_it.html" class="link-nice">SUNNY TRIPOWER 8.0 / 10.0</a></p></li>
+            <li><p><a href="../Parameter-STP3-6-3AV-40_V13/parameterlist_it.html" class="link-nice">STP3.0-3AV-40 / STP4.0-3AV-40 / STP5.0-3AV-40 / STP6.0-3AV-40</a></p></li>
+            <li><p><a href="../PARAMETER-STPX15/parameterlist_it.html" class="link-nice">STP 12-50 / STP 15-50 / STP 20-50 / STP 25-50 (Sunny Tripower X 12 / Sunny Tripower X 15 / Sunny Tripower X 20 / Sunny Tripower X 25)</a></p></li>
+            <li><p><a href="../Parameter-STP110-60/STP110-60-page.html" class="link-nice">STP 110-60</a></p></li>
+        </ul>
+    </div>
+    <div class="listReferenzePV">
         <table>
             <thead>
                 <tr>
-                    <th>Numero Aux</th>
-                    <th>Nome</th>
+                    <th>N. PV</th>
                     <th>Tag Name</th>
                     <th>Tag Description</th>
-                    <th>Indirizzo registro SMA ModBus</th>
-                    <th>Device ID</th>
-                    <th>Indirizzo IP</th>
-                    <th>Status/Quality</th>
-                    <th>Discrepanze</th>
+                    <th>Indirizzo registro SMA Modbus</th>
+                    <th>Progetto di Riferimento</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>1</td>
-                    <td>Betriebstrafo</td>
-                    <td>PowerEqAux1</td>
-                    <td>Potenza attiva trifase - [kW] </td>
-                    <td>40066H</td>
-                    <td>1</td>
-                    <td>220.0.100.68</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Sicotronic</td>
-                    <td>PowerEqAux2</td>
-                    <td>Potenza attiva trifase - BHKW 1 (coge 1) [kW]</td>
-                    <td>39000H</td>
-                    <td>2</td>
-                    <td>220.0.100.66</td>
-                    <td>Unknown</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td></td>
-                    <td>PowerEqAux3</td>
-                    <td>Potenza attiva trifase - BHKW 2 (coge 2) [kW]</td>
-                    <td>39000H</td>
-                    <td>10</td>
-                    <td>220.0.100.67</td>
-                    <td>Unknown</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>4</td>
                     <td>PV1</td>
                     <td>PowerEqAux4</td>
                     <td>Potenza attiva trifase - PV 1 [kW]</td>
                     <td>430776M</td>
-                    <td>3</td>
-                    <td>220.0.100.69</td>
-                    <td></td>
-                    <td></td>
+                    <td><img src="/pages/assets/HubertusLogo.png" alt="Hubertus Logo"></td>
                 </tr>
                 <tr>
-                    <td>5</td>
                     <td>PV2</td>
                     <td>PowerEqAux5</td>
                     <td>Potenza attiva trifase - PV 2 [kW]</td>
                     <td>430776M</td>
-                    <td>3</td>
-                    <td>220.0.100.113</td>
-                    <td>No Communication</td>
-                    <td>Errore dovuto ad un
-                        probabile ip sbagliato</td>
+                    <td><img src="/pages/assets/HubertusLogo.png" alt="Hubertus Logo"></td>
                 </tr>
                 <tr>
-                    <td>6</td>
-                    <td>Pelletkessel 1</td>
-                    <td>PowerEqAux6</td>
-                    <td>Potenza attiva trifase - Pelletkessel 1 (Caldaia a pellet 1) [kW]</td>
-                    <td>39000H</td>
-                    <td>2</td>
-                    <td>192.168.45.6</td>
-                    <td>No Communication</td>
-                    <td></td>
+                    <td>PV1</td>
+                    <td>PowerInverterPV1</td>
+                    <td>Potenza AC in uscita dall'inverter 1 dell'impianto FV - (P inverter = 136.5 kWp) - stabile principale</td>
+                    <td>440085</td>
+                    <td><img src="/pages/assets/ArcoLogo.png" alt="Hubertus Logo"></td>
                 </tr>
                 <tr>
-                    <td>7</td>
-                    <td>Pelletkessel 2</td>
-                    <td>PowerEqAux7</td>
-                    <td>Potenza attiva trifase - Pelletkessel 2 (Caldaia a pellet 2) [kW]</td>
-                    <td>39000H</td>
-                    <td>7</td>
-                    <td>192.168.45.7</td>
-                    <td>No Communication</td>
-                    <td></td>
+                    <td>PV2</td>
+                    <td>PowerInverterPV2</td>
+                    <td>Potenza AC in uscita dall'inverter 2 dell'impianto FV - (P inverter = 136.5 kWp) - stabile principale</td>
+                    <td>440085</td>
+                    <td><img src="/pages/assets/ArcoLogo.png" alt="Hubertus Logo"></td>
                 </tr>
                 <tr>
-                    <td>8</td>
-                    <td>Kaelteverbunlage Technik</td>
-                    <td>PowerEqAux8</td>
-                    <td>Potenza Kälteverbunlage (sala frigo) [kW]</td>
-                    <td>49000H</td>
-                    <td>8</td>
-                    <td>220.0.100.31</td>
-                    <td></td>
-                    <td></td>
+                    <td>PV3</td>
+                    <td>PowerInverterPV3</td>
+                    <td>Potenza AC in uscita dall'inverter 3 dell'impianto FV - (P inverter = 136.5 kWp) - stabilie principale</td>
+                    <td>440085</td>
+                    <td><img src="/pages/assets/ArcoLogo.png" alt="Hubertus Logo"></td>
                 </tr>
                 <tr>
-                    <td>9</td>
-                    <td>Bergsauna</td>
-                    <td>PowerEqAux9</td>
-                    <td>Potenza attiva trifase - Saunaöfen 1 (riscaldatore per sauna 1) | Aussen Sauna [kW] - Letta come
-                        INT</td>
-                    <td>49000H</td>
-                    <td>9</td>
-                    <td>220.0.100.32</td>
-                    <td>No Communication</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>Panoramasauna Ofen 1</td>
-                    <td>PowerEqAux10</td>
-                    <td>Potenza attiva trifase - Saunaöfen 2 (riscaldatore per sauna 2) | Finnische Sauna [kW]</td>
-                    <td>49000H</td>
-                    <td>10</td>
-                    <td>220.0.100.33</td>
-                    <td>No Communication</td>
-                    <td>Fa riferimento ad PowerEqAux9</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>Finnische Sauna</td>
-                    <td>PowerEqAux11</td>
-                    <td>Potenza attiva trifase - Saunaöfen 3 (riscaldatore per sauna 3) | Finnische Sauna [kW]</td>
-                    <td>49000H</td>
-                    <td>11</td>
-                    <td>220.0.100.34</td>
-                    <td>No Communication</td>
-                    <td>Fa riferimento ad PowerEqAux9</td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>Panoramasauna Ofen 2</td>
-                    <td>PowerEqAux12</td>
-                    <td>Potenza attiva trifase - Saunaöfen 4 (riscaldatore per sauna 4) | Kräutersauna [kW]</td>
-                    <td>49000H</td>
-                    <td>12</td>
-                    <td>220.0.100.35</td>
-                    <td>No Communication</td>
-                    <td>Discrepanza?</td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>Lueftungen SPA</td>
-                    <td>PowerEqAux13</td>
-                    <td>Potenza attiva trifase - Ventilazione sauna piscina e altro (non cucina) [kW]</td>
-                    <td>49000H</td>
-                    <td>13</td>
-                    <td>220.0.100.36</td>
-                    <td>No Communication</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td>Infinity Pool 1</td>
-                    <td>PowerEqAux14</td>
-                    <td>Potenza attiva trifase - Umwälzpumpen 1 (pompa di circolazione 1) [kW]</td>
-                    <td>49000H</td>
-                    <td>14</td>
-                    <td>220.0.100.37</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td>Infinity Pool 2</td>
-                    <td>PowerEqAux15</td>
-                    <td>Potenza attiva trifase - Umwälzpumpen 2 (pompa di circolazione 2) [kW]</td>
-                    <td>49000H</td>
-                    <td>15</td>
-                    <td>220.0.100.38</td>
-                    <td></td>
-                    <td>Non connette 220.0.100.38</td>
-                </tr>
-                <tr>
-                    <td>16</td>
-                    <td>Spuelmaschine</td>
-                    <td>PowerEqAux16</td>
-                    <td>Potenza attiva trifase - Küche Spülstraße (lavastoviglie) [kW] - Letta come INT</td>
-                    <td>49000H</td>
-                    <td>16</td>
-                    <td>220.0.100.39</td>
-                    <td></td>
-                    <td>Non connette 220.0.100.39</td>
-                </tr>
-                <tr>
-                    <td>17</td>
-                    <td>Lueftung Küche</td>
-                    <td>PowerEqAux17</td>
-                    <td>Potenza attiva trifase - Küche Luftung (ventilazione della cucina) [kW]</td>
-                    <td>49000H</td>
-                    <td>17</td>
-                    <td>220.0.100.40</td>
-                    <td></td>
-                    <td>Non connette 220.0.100.40</td>
-                </tr>
-                <tr>
-                    <td>18</td>
-                    <td>Kueche Gesamtanlage</td>
-                    <td>PowerEqAux18</td>
-                    <td>Potenza attiva trifase - Küche Gesamtanlage (generale cucina) [kW]</td>
-                    <td>49000H</td>
-                    <td>18</td>
-                    <td>220.0.100.41</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>19</td>
-                    <td>Waescherei 1</td>
-                    <td>PowerEqAux19</td>
-                    <td>Potenza attiva trifase - Wäscherei 1 (lavanderia 1) [kW] - Letta come INT</td>
-                    <td>49000H</td>
-                    <td>19</td>
-                    <td>220.0.100.42</td>
-                    <td></td>
-                    <td>Active Power 0, forse è spento</td>
-                </tr>
-                <tr>
-                    <td>20</td>
-                    <td>Wärmedaten</td>
-                    <td>PowerEqAux20</td>
-                    <td>Potenza attiva trifase - Wärmedaten-Dati sul calore esistenti [kW]</td>
-                    <td>45934H</td>
-                    <td>20</td>
-                    <td>220.0.100.43</td>
-                    <td></td>
-                    <td>Non connette 220.0.100.43</td>
-                </tr>
-                <tr>
-                    <td>21</td>
-                    <td>Ladesaulen Privat</td>
-                    <td>PowerEqAux21</td>
-                    <td>Potenza attiva trifase - Ladesäulen für E-Fahrzeuge (colonnine di ricarica) [kW] - Letta come
-                        INT</td>
-                    <td>49000H</td>
-                    <td>21</td>
-                    <td>220.0.100.44</td>
-                    <td>No Communication</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>22</td>
-                    <td>Zubringer Pellet 1</td>
-                    <td>PowerEqAux22</td>
-                    <td>Potenza attiva trifase - Warmwasserverteilungspumpe für Räume 1 (pompa 1 per acqua calda in
-                        stanze) [kW]</td>
-                    <td>49000H</td>
-                    <td>22</td>
-                    <td>220.0.100.45</td>
-                    <td></td>
-                    <td>Non connette 220.0.100.45</td>
-                </tr>
-                <tr>
-                    <td>23</td>
-                    <td>Zubringer Pellet 2</td>
-                    <td>PowerEqAux23</td>
-                    <td>Potenza attiva trifase - Warmwasserverteilungspumpe für Räume 2 (pompa 2 per acqua calda in
-                        stanze) [kW] - Letta come INT</td>
-                    <td>49000H</td>
-                    <td>23</td>
-                    <td>220.0.100.46</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>24</td>
-                    <td>Kuehldecke SPA</td>
-                    <td>PowerEqAux24</td>
-                    <td>Potenza attiva trifase - Kühlaggregate - Unità di raffreddamento [kW]</td>
-                    <td>49000H</td>
-                    <td>24</td>
-                    <td>220.0.100.47</td>
-                    <td>No Communication</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>25</td>
-                    <td>Onsen Filterpumpe</td>
-                    <td>PowerEqAux25</td>
-                    <td>Potenza attiva trifase - Filterpumpen - Pompe a filtro [kW]</td>
-                    <td>49000H</td>
-                    <td>25</td>
-                    <td>220.0.100.48</td>
-                    <td></td>
-                    <td>Non connette 220.0.100.48</td>
-                </tr>
-                <tr>
-                    <td>26</td>
-                    <td>Onsen Druckpumpe</td>
-                    <td>PowerEqAux26</td>
-                    <td>Potenza attiva trifase - Druckerhöhungsngspumpe - Pompa ausiliaria [kW]</td>
-                    <td>49000H</td>
-                    <td>26</td>
-                    <td>220.0.100.49</td>
-                    <td></td>
-                    <td>Non connette 220.0.100.49</td>
-                </tr>
-                <tr>
-                    <td>27</td>
-                    <td>Dampfsauna</td>
-                    <td>PowerEqAux27</td>
-                    <td>Potenza attiva trifase - Dampfkessel dampfsauna - Caldaia a vapore sauna a vapore [kW]</td>
-                    <td>49000H</td>
-                    <td>27</td>
-                    <td>220.0.100.50</td>
-                    <td>No Communication</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>28</td>
-                    <td>Zubringer HZ Mitte 1</td>
-                    <td>PowerEqAux28</td>
-                    <td>Potenza attiva trifase - Umwältpumpe für SPA 1 - Pompa di circolazione per SPA 1 [kW]</td>
-                    <td>49000H</td>
-                    <td>28</td>
-                    <td>220.0.100.51</td>
-                    <td></td>
-                    <td>Non connette 220.0.100.51</td>
-                </tr>
-                <tr>
-                    <td>29</td>
-                    <td>Zubringer HZ Mitte 2</td>
-                    <td>PowerEqAux29</td>
-                    <td>Potenza attiva trifase - Umwältpumpe für SPA 2 - Pompa di circolazione per SPA 2 [kW]</td>
-                    <td>49000H</td>
-                    <td>29</td>
-                    <td>220.0.100.52</td>
-                    <td></td>
-                    <td>Non connette 220.0.100.52</td>
-                </tr>
-                <tr>
-                    <td>30</td>
-                    <td>Waescherei 2</td>
-                    <td>PowerEqAux30</td>
-                    <td>Potenza attiva trifase - Wäscherei 2 (lavanderia 2) [kW]</td>
-                    <td>49000H</td>
-                    <td>30</td>
-                    <td>220.0.100.53</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>31</td>
-                    <td></td>
-                    <td>PowerEqAux31</td>
-                    <td>Potenza attiva trifase - Abluftung Showküche - Ventilazione di scarico cucina [kW]</td>
-                    <td>45934H</td>
-                    <td>31</td>
-                    <td>220.0.100.54</td>
-                    <td>No Communication</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>33</td>
-                    <td>Quelle Pumpe 1</td>
-                    <td>PowerEqAux33</td>
-                    <td>Potenza attiva trifase - Quelle Wasser Pumpe 2 - Fonte Pompa acqua 2 [kW]</td>
-                    <td>49000H</td>
-                    <td>33</td>
-                    <td>220.0.100.56</td>
-                    <td></td>
-                    <td>Non connette 220.0.100.56</td>
-                </tr>
-                <tr>
-                    <td>34</td>
-                    <td>Quelle Pumpe 2</td>
-                    <td>PowerEqAux34</td>
-                    <td>Potenza attiva trifase - Quelle Wasser Pumpe 1 - Sorgente Acqua Pompa 1 [kW]</td>
-                    <td>49000H</td>
-                    <td>34</td>
-                    <td>220.0.100.55</td>
-                    <td>No Communication</td>
-                    <td>Aux invertiti?</td>
+                    <td>PV4</td>
+                    <td>PowerInverterPV4</td>
+                    <td>Potenza AC in uscita dall'inverter 4 dell'impianto FV - (P inverter = 136.5 kWp) - stabilie magazzino sud</td>
+                    <td>440085</td>
+                    <td><img src="/pages/assets/ArcoLogo.png" alt="Hubertus Logo"></td>
                 </tr>
             </tbody>
         </table>
     </div>
     <footer>
         <div class="footer-box">
-            <h2>Note</h3>
-            <p>Questa sezione fornisce alcune note importanti
-                relative al contenuto della pagina:</p>
+            <h2>Annotazioni</h3>
+            <p>Legenda Manuali di riferimento per impianto:</p>
             <ul>
-                <li>33 Multimetri</li>
-                <li>32esimo Multimetro non esistente</li>
-                <li>Legenda per future icone</li>
+                <li>Hubertus: Inverter SMA 10.0</li>
+                <li>Arco: Inverter SMA STP 110-60</li>
             </ul>
         </div>
     </footer>
