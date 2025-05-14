@@ -3,8 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>STP 110-60 Manual</title>
+    <link rel="icon" href="../../../../pages/assets/VeilLogoFavicon.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="../Parameter-STP110-60/Manual-STP110-60.css">
+</head>
+
+<body>
     <div id="header">
-        <img src="../pages/assets/SMALogopng.png" alt="SMA Logo">
+        <img src="../../pages/assets/SMALogopng.png" alt="SMA Logo">
     </div>
     <div id="ManualName">
         <h1>CORE2 STP 110-60 Sunspec Modbus Model PICS Overview V12</h1>
@@ -17,8 +23,7 @@
                 <li>Values arching over multiple registers (e.g. Model 103, Evt1, bitfield32) have to be polled
                     completely. It is not allowed to poll only the upper or lower 16 Bits.</li>
                 <li>For reactive power control only one of the registers 123.OutPFSet_Ena, 123.VArPct_Ena, 126.ModEna
-                    and 131.ModEna can be activated. To change the mode, the current mode must be de-activated first.
-                </li>
+                    and 131.ModEna can be activated. To change the mode, the current mode must be de-activated first.</li>
                 <li>Except of model 123 (Immediate Inverter Controls) all data is written to flash memory - i.e.
                     excessive write access can damage the device.</li>
                 <li>As the data in model 123 is stored in RAM, it does not get restored after inverter shutdown.
@@ -30,10 +35,6 @@
             </ul>
         </div>
     </div>
-    <link rel="stylesheet" href="../Parameter-STP110-60/Manual-STP110-60.css">
-</head>
-
-<body>
     <div class="table">
         <table>
             <thead>
