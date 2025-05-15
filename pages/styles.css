@@ -9,6 +9,7 @@ body {
   background-color: #f4f6f9;
   color: #333;
   max-width: 100%;
+  min-width: 340px;
 }
 
 a.link-nice {
@@ -120,4 +121,18 @@ a.link-nice:hover {
 
 .dropdown:hover .dropbtn .arrow {
   transform: rotate(180deg);
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 30px;
+  }
+  .listaManuali {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .listaManuali li {
+    margin-bottom: 10px;
+  }
 }
