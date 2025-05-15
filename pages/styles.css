@@ -1,11 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f6f9;
   color: #333;
-  overflow-x: hidden;
-  min-width: 512px;
+  max-width: 100%;
 }
 
 a.link-nice {
