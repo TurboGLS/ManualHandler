@@ -3,6 +3,7 @@
     font-size: 11pt;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -99,4 +100,44 @@ i {
 
 i:hover {
     color: #005582 !important;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        min-width: 320px;
+    }
+    
+    .table {
+        overflow-x: auto;
+    }
+    
+    .header-box {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 40px;
+        padding: 15px;
+        border-radius: 15px;
+    }
+    
+    .header-box h2 {
+        font-size: 18px;
+    }
+    
+    .header-box ul {
+        padding-left: 20px;
+    }
+    
+    #header img {
+        width: 120px;
+        padding-bottom: 10px;
+    }
+    
+    #ManualName h1 {
+        font-size: 22px;
+    }
+    
+    th, td {
+        padding: 8px 10px;
+        word-break: break-word;
+    }
 }
