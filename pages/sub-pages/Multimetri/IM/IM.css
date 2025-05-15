@@ -6,8 +6,6 @@
 }
 
 body {
-    padding: 0px;
-    margin: 0px;
     min-width: 512px;
 }
 
@@ -27,8 +25,6 @@ body {
     font-size: 25px;
     text-align: left;
     padding-left: 10px;
-    padding-top: 0px;
-    margin-left: 0px;
 }
 
 #blockTable {
