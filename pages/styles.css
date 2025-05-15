@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-color: #f4f6f9;
   color: #333;
+  overflow: hidden;
 }
 
 a.link-nice {
@@ -43,6 +44,7 @@ a.link-nice:hover {
 
 .block {
   background-color: #ffffff;
+  width: 100%;
 }
 
 .listaManuali {
@@ -50,7 +52,7 @@ a.link-nice:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:100px;
+  gap: 100px;
   padding: 20px;
   margin: 0;
   width: 100%;
